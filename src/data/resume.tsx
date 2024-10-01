@@ -60,7 +60,7 @@ export const DATA = {
       start: "Dec 2023",
       end: "Current",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Developed secure KYC processing flows for new clients and streamlined client binding processes for an enhanced user experience. Designed and implemented features for buying and selling investment products in collaboration with DBS Bank. Optimized website performance and user interfaces, reducing build time, while ensuring alignment with business goals and regulatory standards through cross-team collaboration.",
     },
     {
       company: "Pintar Ventura Group",
@@ -72,7 +72,7 @@ export const DATA = {
       start: "February 2023",
       end: "August 2023",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+        "Developed Posy Resto, including the Admin Panel, Point of Sales Web App, and Digital Menu, using NextJS, TypeScript, and TailwindCSS. Implemented MVVM architecture, doubling project speed and enhancing maintainability and team collaboration. Achieved 80% unit test coverage and wrote comprehensive technical documentation. Integrated SEO and Google Analytics for user behavior tracking, while fostering coding standard consistency and a culture of continuous improvement within the development team.",
     },
     {
       company: "Staffinc",
@@ -84,7 +84,7 @@ export const DATA = {
       start: "February 2021",
       end: "December 2022",
       description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
+        "Collaborated with cross-functional teams to enhance the HR Management System used by Staffinc clients for over 100 agents, utilizing ReactJS and NextJS. Developed maintainable, reusable components with styled components and an Atomic Design approach, doubling feature development speed. Refactored code to functional components for improved performance and created standardized JSON Schema Utils for custom data features. Prepared code for production release and authored comprehensive release documentation.",
     },
     {
       company: "Cinema XXI",
@@ -96,7 +96,7 @@ export const DATA = {
       start: "Mei 2019",
       end: "Jan 2021",
       description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
+        "Successfully developed features for Cinema XXI’s Headoffice Portal, including a cinema layout designer for over 100 studios, a movie listing tool, and a pricing calendar for special events, all using ReactJS. Improved internal transaction reconciliation tools for the Finance Division with a PHP stack, streamlining processes and reducing manual effort.",
     },
     {
       company: "Telkom Indonesia",
@@ -108,7 +108,7 @@ export const DATA = {
       start: "July 2013",
       end: "Mei 2019",
       description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
+        "Developed multiple product websites using PHP CodeIgniter, including Dashboard Speedy and Matakita.com. Enhanced Edumail with real-time chat and dashboard features leveraging Golang, WebSocket, and JavaScript. Created Mattermost as a cost-effective alternative to Slack using ReactJS. Led key projects such as MADP BRI and Katalog BUMN, driving successful outcomes.",
     },
   ],
   education: [
@@ -127,8 +127,7 @@ export const DATA = {
       href: "https://www.ganesport.org/",
       dates: "-",
       active: true,
-      description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+      description: "Help to ensure the website is running well and maintains",
       technologies: ["Wordpress"],
       links: [
         {
@@ -145,8 +144,7 @@ export const DATA = {
       href: "https://muslimmandiri.or.id/",
       dates: "2017 - current",
       active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
+      description: "Designed, developed website for our foundation.",
       technologies: ["Wordpress"],
       links: [
         {
