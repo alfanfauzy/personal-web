@@ -4,13 +4,13 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Alfan Fauzy",
   initials: "AF",
-  url: "https://alfanfauzy.dev",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  url: "https://alfan.web.id",
+  location: "Jakarta, ID",
+  locationLink: "https://www.google.com/maps/place/jakarta",
   description:
-    "Senior Frontend Developer who live in Malang, Indonesia. I love explore about tech, try to build some things important. Very active on Twitter.",
+    "Frontend Developer based in Jakarta, Indonesia. Passionate about building impactful web experiences and exploring new tech.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "With over 4 years in frontend development, I’ve contributed to a range of digital products—from fintech platforms to restaurant systems—focusing on performance, maintainability, and seamless user experiences. I’ve led improvements that drastically reduced build times and sizes, and implemented real-time features like live streaming, chat, and analytics dashboards. I enjoy working with TypeScript, React, and modern frontend architecture, and I’m always exploring ways to write cleaner, more efficient code.",
   avatarUrl: "/me.png",
   skills: ["React", "Next.js", "Typescript", "Node.js"],
   navbar: [
