@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon, Code } from "lucide-react";
 
 export const DATA = {
   name: "Alfan Fauzy",
@@ -10,11 +10,90 @@ export const DATA = {
   description:
     "Frontend Developer based in Jakarta, Indonesia. Passionate about building impactful web experiences and exploring new tech.",
   summary:
-    "With over 4 years in frontend development, I’ve contributed to a range of digital products—from fintech platforms to restaurant systems—focusing on performance, maintainability, and seamless user experiences. I’ve led improvements that drastically reduced build times and sizes, and implemented real-time features like live streaming, chat, and analytics dashboards. I enjoy working with TypeScript, React, and modern frontend architecture, and I’m always exploring ways to write cleaner, more efficient code.",
+    "With over 4 years in frontend development, I’ve contributed to a range of digital products from **Telecomunications, Entertainment, HR Management System, Restauran Point of Sales, AI Automatication, and Fintech platforms** focusing on performance, maintainability, and seamless user experiences.\n\n I’ve led improvements that drastically reduced build times and sizes, and implemented real-time features like live streaming, chat, and analytics dashboards. I enjoy working with **React, TypeScript, NextJS, TailwindCSS** and modern frontend architecture, and I’m always exploring ways to write cleaner, more efficient code.",
   avatarUrl: "/me.png",
-  skills: ["React", "Next.js", "Typescript", "Node.js"],
+  skills: [
+    {
+      text: "HTML",
+      color: "#E34F26",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png",
+    },
+    {
+      text: "CSS",
+      color: "#663399",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png",
+    },
+    {
+      text: "Javascript",
+      color: "#F7DF1E",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png",
+    },
+    {
+      text: "React",
+      color: "#61DAFB",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png",
+    },
+    {
+      text: "Next.js",
+      color: "#000000",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/next_js.png",
+    },
+    {
+      text: "Typescript",
+      color: "#3178C6",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png",
+    },
+    {
+      text: "Webscoket",
+      color: "#010101",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/websocket.png",
+    },
+    {
+      text: "Node.js",
+      color: "#5FA04E",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/node_js.png",
+    },
+    {
+      text: "PHP",
+      color: "#777BB4",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php.png",
+    },
+    {
+      text: "Golang",
+      color: "#000000",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/go.png",
+    },
+    {
+      text: "Wordpress",
+      color: "#21759B",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/wordpress.png",
+    },
+  ],
+  styilingskilss: [
+    {
+      text: "TailwindCSS",
+      color: "#06B6D4",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png",
+    },
+    {
+      text: "Bootstrap",
+      color: "#7952B3",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bootstrap.png",
+    },
+    {
+      text: "Ant Design",
+      color: "#0170FE",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/ant_design.png",
+    },
+    {
+      text: "Styled Component",
+      color: "#DB7093",
+      logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/styled-components.png",
+    },
+  ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/project", icon: Code, label: "Project" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
@@ -123,10 +202,100 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Moduit Web Advisor",
+      href: "https://advisor-beta.moduit.id/",
+      dates: "2023-current",
+      active: true,
+      description:
+        "Development website for Advisor that provide digital product investment like bond, mutual fund, equity, insurance",
+      technologies: ["React", "NextJS", "Styled Component", "Typescript"],
+      links: [
+        {
+          type: "Website",
+          href: "https://advisor-beta.moduit.id/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/project/portofolio-advisor.jpeg",
+      video: "",
+    },
+    {
+      title: "Radar Dashboard - AI Dashboard Monitoring Social Media",
+      href: "-",
+      dates: "2025",
+      active: false,
+      description:
+        "Development dashboard monitoring social media support with AI",
+      technologies: ["React", "Bootstrap", "Websocket"],
+      links: [
+        {
+          type: "Website",
+          href: "-",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/project/radar-dashboard.jpeg",
+      video: "",
+    },
+    {
+      title: "Point of Sales - Restaurant (Posy Resto)",
+      href: "https://dashboard.posy.tech/auth/login",
+      dates: "2023",
+      active: false,
+      description:
+        "Development HR Management System to managing workers through outsourcing services and employment solutions",
+      technologies: ["React", "Typescript", "NextJS", "TailwindCSS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://dashboard.posy.tech/auth/login",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/project/posy-resto.png",
+      video: "",
+    },
+    {
+      title: "Personal Website - Alfan",
+      href: "https://personal-web-sable-eight.vercel.app/",
+      dates: "2023",
+      active: false,
+      description:
+        "My Personal Website to show my skill, experience and expertise as Web Development",
+      technologies: ["React", "Typescript", "NextJS", "TailwindCSS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://personal-web-sable-eight.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/project/personal-website-alfan.png",
+      video: "",
+    },
+    {
+      title: "Staffinc HR Management System",
+      href: "https://client.staffincsuite.co/login",
+      dates: "2021-2022",
+      active: false,
+      description:
+        "Development HR Management System to managing workers through outsourcing services and employment solutions",
+      technologies: ["React", "Typescript", "NextJS", "Styled Component"],
+      links: [
+        {
+          type: "Website",
+          href: "https://client.staffincsuite.co/login",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/project/staffinc-hr.jpeg",
+      video: "",
+    },
+    {
       title: "Ganesport Foundation",
       href: "https://www.ganesport.org/",
-      dates: "-",
-      active: true,
+      dates: "2019",
+      active: false,
       description: "Help to ensure the website is running well and maintains",
       technologies: ["Wordpress"],
       links: [
@@ -143,7 +312,7 @@ export const DATA = {
       title: "Yayasan Muslim Mandiri Indonesia",
       href: "https://muslimmandiri.or.id/",
       dates: "2017 - current",
-      active: true,
+      active: false,
       description: "Designed, developed website for our foundation.",
       technologies: ["Wordpress"],
       links: [
@@ -157,4 +326,4 @@ export const DATA = {
       video: "",
     },
   ],
-} as const;
+};
