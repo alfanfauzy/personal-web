@@ -58,7 +58,7 @@ export default function RootLayout({
       <link rel="icon" href="/fav-me-icon.ico" sizes="any" />
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6 shadow-xl",
+          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6 shadow-xl dark:shadow-slate-200",
           fontSans.variable
         )}
       >
