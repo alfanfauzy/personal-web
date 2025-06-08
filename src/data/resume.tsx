@@ -137,7 +137,7 @@ export const DATA = {
       title: "Senior Web Developer",
       logoUrl: "/work/moduit.png",
       start: "Dec 2023",
-      end: "Current",
+      end: "Jun 2025",
       description:
         "Developed secure KYC processing flows for new clients and streamlined client binding processes for an enhanced user experience. Designed and implemented features for buying and selling investment products in collaboration with DBS Bank. Optimized website performance and user interfaces, reducing build time, while ensuring alignment with business goals and regulatory standards through cross-team collaboration.",
     },
