@@ -1,4 +1,4 @@
-import { getBlogPosts, getPost } from "@/data/blog";
+import { getBlogBySlug, getBlogPosts, getPost } from "@/data/blog";
 import { DATA } from "@/data/resume";
 import { formatDate } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -17,15 +17,13 @@ export async function generateMetadata({
     slug: string;
   };
 }): Promise<Metadata | undefined> {
-  let post = await getPost(params.slug);
+  let post = await getBlogBySlug(params.slug);
 
-  let {
-    title,
-    publishedAt: publishedTime,
-    summary: description,
-    image,
-  } = post.metadata;
-  let ogImage = image ? `${DATA.url}${image}` : `${DATA.url}/og?title=${title}`;
+  let { title, published_at, description, cover_image } = post;
+
+  let ogImage = cover_image
+    ? `${DATA.url}${cover_image}`
+    : `${DATA.url}/og?title=${title}`;
 
   return {
     title,
@@ -34,7 +32,7 @@ export async function generateMetadata({
       title,
       description,
       type: "article",
-      publishedTime,
+      publishedTime: published_at,
       url: `${DATA.url}/blog/${post.slug}`,
       images: [
         {
@@ -58,7 +56,7 @@ export default async function Blog({
     slug: string;
   };
 }) {
-  let post = await getPost(params.slug);
+  let post = await getBlogBySlug(params.slug);
 
   if (!post) {
     notFound();
@@ -73,13 +71,13 @@ export default async function Blog({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            headline: post.metadata.title,
-            datePublished: post.metadata.publishedAt,
-            dateModified: post.metadata.publishedAt,
-            description: post.metadata.summary,
-            image: post.metadata.image
-              ? `${DATA.url}${post.metadata.image}`
-              : `${DATA.url}/og?title=${post.metadata.title}`,
+            headline: post.title,
+            datePublished: post.published_at,
+            dateModified: post.published_at,
+            description: post.description,
+            image: post.cover_image
+              ? `${DATA.url}${post.cover_image}`
+              : `${DATA.url}/og?title=${post.title}`,
             url: `${DATA.url}/blog/${post.slug}`,
             author: {
               "@type": "Person",
@@ -89,18 +87,18 @@ export default async function Blog({
         }}
       />
       <h1 className="title font-medium text-2xl tracking-tighter max-w-[650px]">
-        {post.metadata.title}
+        {post.title}
       </h1>
       <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[650px]">
         <Suspense fallback={<p className="h-5" />}>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            {formatDate(post.metadata.publishedAt)}
+            {formatDate(post.published_at)}
           </p>
         </Suspense>
       </div>
       <article
         className="prose dark:prose-invert"
-        dangerouslySetInnerHTML={{ __html: post.source }}
+        dangerouslySetInnerHTML={{ __html: post.body_html }}
       ></article>
     </section>
   );

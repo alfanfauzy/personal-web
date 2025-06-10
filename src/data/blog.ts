@@ -1,3 +1,5 @@
+import { BlogsType } from "@/types/blogstypes";
+import { BlogTypes } from "@/types/blogtypes";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
@@ -65,4 +67,24 @@ async function getAllPosts(dir: string) {
 
 export async function getBlogPosts() {
   return getAllPosts(path.join(process.cwd(), "content"));
+}
+
+export async function getAllBlogs(): Promise<Array<BlogsType>> {
+  // Fetch data from external API
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_DEV_TO_BASE_URL_API}/articles?username=${process.env.NEXT_PUBLIC_DEV_TO_USERNAME}`
+  );
+  const data = await response.json();
+
+  return data;
+}
+
+export async function getBlogBySlug(slug: string): Promise<BlogTypes> {
+  // Fetch data from external API
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_DEV_TO_BASE_URL_API}/articles/${process.env.NEXT_PUBLIC_DEV_TO_USERNAME}/${slug}`
+  );
+  const data = await response.json();
+
+  return data;
 }
