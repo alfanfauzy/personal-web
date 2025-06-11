@@ -18,16 +18,16 @@ export default function Page() {
         <main className="flex flex-col min-h-[100dvh] space-y-10">
             <section id="hero">
                 <div className="mx-auto w-full max-w-2xl space-y-8">
-                    <div className="gap-2 flex justify-between">
+                    <div className="gap-5 flex justify-between flex-col-reverse md:flex-row md:gap-2">
                         <div className="flex-col flex flex-1 gap-3 justify-around">
                             <BlurFadeText
                                 delay={BLUR_FADE_DELAY}
-                                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none flex justify-center w-full md:justify-start"
                                 yOffset={8}
                                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
                             />
                             <BlurFadeText
-                                className="max-w-[600px] md:text-xl"
+                                className="max-w-[600px] md:text-xl text-center md:text-left"
                                 delay={BLUR_FADE_DELAY}
                                 text={DATA.description}
                             />
