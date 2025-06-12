@@ -1,7 +1,12 @@
 ![alt text](public/project/personal-website-alfan.png)
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://personal-web-sable-eight.vercel.app/)
 
+## Lighthouse Performance
+<div align="center">
+<img width="855" alt="image" src="https://github.com/user-attachments/assets/5ab2b62b-fd33-42db-9535-b97576f0f1be" />
+</div>
+
+# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://personal-web-sable-eight.vercel.app/)
 Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
 
 # Features
@@ -11,6 +16,7 @@ Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://
 - Includes a blog
 - Responsive for different devices
 - Optimized for Next.js and Vercel
+- Progressive Web App (PWA)
 
 # Getting Started Locally
 
