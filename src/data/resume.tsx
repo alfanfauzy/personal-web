@@ -262,7 +262,7 @@ export const DATA = {
       active: false,
       description:
         "My Personal Website to show my skill, experience and expertise as Web Development",
-      technologies: ["React", "Typescript", "NextJS", "TailwindCSS"],
+      technologies: ["React", "Typescript", "NextJS", "TailwindCSS", "PWA"],
       links: [
         {
           type: "Website",
@@ -280,7 +280,7 @@ export const DATA = {
       active: false,
       description:
         "Development HR Management System to managing workers through outsourcing services and employment solutions",
-      technologies: ["React", "Typescript", "NextJS", "Styled Component", "PWA"],
+      technologies: ["React", "Typescript", "NextJS", "Styled Component"],
       links: [
         {
           type: "Website",
