@@ -3,6 +3,9 @@ import nextPwa from "next-pwa";
 
 const nextConfig = {
     reactStrictMode: true,
+    images: {
+        domains: ["raw.githubusercontent.com"],
+    },
 };
 
 const withPWA = nextPwa({
