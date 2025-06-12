@@ -280,7 +280,7 @@ export const DATA = {
       active: false,
       description:
         "Development HR Management System to managing workers through outsourcing services and employment solutions",
-      technologies: ["React", "Typescript", "NextJS", "Styled Component"],
+      technologies: ["React", "Typescript", "NextJS", "Styled Component", "PWA"],
       links: [
         {
           type: "Website",
