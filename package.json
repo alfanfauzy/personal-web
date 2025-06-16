@@ -28,9 +28,13 @@
     "react-markdown": "^9.0.1",
     "rehype-pretty-code": "^0.13.2",
     "rehype-stringify": "^10.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-highlight.js": "^8.0.0",
+    "remark-html": "^16.0.1",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.0",
     "shiki": "^1.7.0",
+    "strip-html-comments": "^1.0.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "unified": "^11.0.4"

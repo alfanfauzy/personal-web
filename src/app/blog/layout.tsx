@@ -6,24 +6,24 @@ import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 
 export default function BlogLayout({ children }: { children: ReactNode }) {
-    const pathname = usePathname();
+  const pathname = usePathname();
 
-    // Show back button only for detail pages like /blog/my-post
-    const isDetailPage = pathname && /^\/blog\/[^/]+$/.test(pathname);
+  // Show back button only for detail pages like /blog/my-post
+  const isDetailPage = pathname && /^\/blog\/[^/]+$/.test(pathname);
 
-    return (
-        <div>
-            <header>
-                {isDetailPage && (
-                    <Link
-                        href="/blog"
-                        className="text-blue-600 hover:underline flex gap-2"
-                    >
-                        <ChevronLeft /> Back to Blog
-                    </Link>
-                )}
-            </header>
-            <main className="p-4">{children}</main>
-        </div>
-    );
+  return (
+    <div>
+      <header>
+        {isDetailPage && (
+          <Link
+            href="/blog"
+            className="text-xl font-bold hover:text-blue-500 flex gap-2 items-center underline tracking-tighter "
+          >
+            <ChevronLeft /> <span>Back to Blog</span>
+          </Link>
+        )}
+      </header>
+      <main className="p-4">{children}</main>
+    </div>
+  );
 }
