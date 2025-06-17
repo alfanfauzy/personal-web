@@ -1,6 +1,5 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { getAllBlogs } from "@/data/blog";
-import useGetEnvironment from "@/hooks/useEnvironment";
 import { formatDate } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,22 +8,6 @@ const BLUR_FADE_DELAY = 0.04;
 
 const BlogPage = async () => {
     const data = await getAllBlogs();
-
-    const env = useGetEnvironment();
-
-    if (env === "production") {
-        return (
-            <section className="flex justify-center">
-                <BlurFade delay={BLUR_FADE_DELAY}>
-                    <hr />
-                    <h1 className="font-medium text-2xl m-8 tracking-tighter">
-                        🚧 Under Construction
-                    </h1>
-                    <hr />
-                </BlurFade>
-            </section>
-        );
-    }
 
     return (
         <section>
