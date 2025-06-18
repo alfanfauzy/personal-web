@@ -7,6 +7,7 @@ import { dateFormatter } from "@/lib/utils";
 import { CalendarDays, Clock2, MoveRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Badge } from "./ui/badge";
 
 type BlogCardProps = {
     post: BlogsType;
@@ -44,12 +45,9 @@ const BlogCard = (props: BlogCardProps) => {
                     {/* Tags positioned at bottom-right */}
                     <div className="absolute bottom-3 right-3 flex gap-2 flex-wrap justify-end z-10">
                         {post.tag_list.map((tag, index) => (
-                            <span
-                                key={index}
-                                className="tracking-tighter border rounded-full px-2 py-1 text-xs text-gray-700 bg-slate-200 backdrop-blur-sm"
-                            >
+                            <Badge className="px-1 py-0 text-[10px]" key={tag}>
                                 {tag}
-                            </span>
+                            </Badge>
                         ))}
                     </div>
                 </div>

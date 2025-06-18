@@ -20,7 +20,7 @@ export default function Page() {
             <section id="hero">
                 <div className="w-full space-y-8">
                     <div className="gap-5 flex justify-between flex-col-reverse md:flex-row md:gap-2">
-                        <div className="flex-col flex flex-1 gap-3 justify-around">
+                        <div className="flex-col flex flex-1 gap-4 justify-center">
                             <BlurFadeText
                                 delay={BLUR_FADE_DELAY}
                                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none flex justify-center w-full md:justify-start"
