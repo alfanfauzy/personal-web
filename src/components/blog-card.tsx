@@ -27,13 +27,31 @@ const BlogCard = (props: BlogCardProps) => {
                 className="group h-full flex flex-col"
             >
                 {/* Image Section */}
-                <div className="relative h-64 bg-gray-800">
-                    <img
-                        src={post.cover_image ?? post.social_image}
-                        alt={post.slug}
-                        className="w-full h-full object-cover"
+                <div className="relative h-64 bg-gray-800 rounded-lg overflow-hidden">
+                    {/* Background image */}
+                    <div
+                        className="absolute inset-0 bg-cover bg-center"
+                        style={{
+                            backgroundImage: `url(${
+                                post.cover_image ?? post.social_image
+                            })`,
+                        }}
                     />
+
+                    {/* Overlay */}
                     <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+
+                    {/* Tags positioned at bottom-right */}
+                    <div className="absolute bottom-3 right-3 flex gap-2 flex-wrap justify-end z-10">
+                        {post.tag_list.map((tag, index) => (
+                            <span
+                                key={index}
+                                className="tracking-tighter border rounded-full px-2 py-1 text-xs text-gray-700 bg-slate-200 backdrop-blur-sm"
+                            >
+                                {tag}
+                            </span>
+                        ))}
+                    </div>
                 </div>
 
                 {/* Content Section */}
@@ -71,9 +89,9 @@ const BlogCard = (props: BlogCardProps) => {
                     <div className="mt-auto flex justify-between">
                         <motion.span
                             whileHover="hover" // trigger animation on hover
-                            className="group text-slate-400 text-sm font-medium hover:text-blue-800 transition-colors duration-200 uppercase tracking-wide flex gap-2 items-center mt-auto cursor-pointer"
+                            className="group text-slate-400 text-sm font-medium hover:text-black transition-colors duration-200 uppercase tracking-wide flex gap-2 items-center mt-auto cursor-pointer"
                         >
-                            READ MORE
+                            Read More
                             <motion.div
                                 variants={{
                                     hover: { x: 5 }, // animate on parent hover
@@ -83,21 +101,9 @@ const BlogCard = (props: BlogCardProps) => {
                                 transition={{ type: "spring", stiffness: 300 }}
                                 className="inline-block"
                             >
-                                <MoveRight className="group-hover:text-blue-800 transition-colors duration-300" />
+                                <MoveRight className="group-hover:text-black transition-colors duration-300" />
                             </motion.div>
                         </motion.span>
-
-                        {/**Tags */}
-                        <div className="flex gap-2 justify-end">
-                            {post.tag_list.map((tag, index) => (
-                                <span
-                                    key={index}
-                                    className="tracking-tighter border rounded-full p-1 text-sm text-gray-500 bg-slate-200"
-                                >
-                                    {tag}
-                                </span>
-                            ))}
-                        </div>
                     </div>
                 </div>
             </Link>
