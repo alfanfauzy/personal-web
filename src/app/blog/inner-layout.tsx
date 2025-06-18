@@ -1,6 +1,5 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Inter as FontSans } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -17,11 +16,6 @@ export default function InnerLayout({
 }: {
     children: React.ReactNode;
 }) {
-    const pathname = usePathname();
-
-    // Show back button only for detail pages like /blog/my-post
-    const isBlogDetailPage = pathname && /^\/blog\/[^/]+$/.test(pathname);
-
     return (
         <body
             className={cn(
