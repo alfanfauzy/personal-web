@@ -8,6 +8,7 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
+import { Download } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -17,7 +18,7 @@ export default function Page() {
     return (
         <main className="flex flex-col min-h-[100dvh] space-y-10">
             <section id="hero">
-                <div className="mx-auto w-full max-w-2xl space-y-8">
+                <div className="w-full space-y-8">
                     <div className="gap-5 flex justify-between flex-col-reverse md:flex-row md:gap-2">
                         <div className="flex-col flex flex-1 gap-3 justify-around">
                             <BlurFadeText
@@ -36,13 +37,13 @@ export default function Page() {
                             <div className="flex flex-col">
                                 <Avatar className="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-full p-6 lg:overflow-visible">
                                     <AvatarImage
-                                        className="object-cover w-40 rounded-full shadow-xl h-40 shadow-blue-gray-900/50"
+                                        className="object-cover w-56 rounded-full shadow-xl h-56 shadow-blue-gray-900/50"
                                         alt={DATA.name}
                                         src={DATA.avatarUrl}
                                         width={100}
                                         height={100}
                                     />
-                                    <AvatarFallback className="w-40 h-40">
+                                    <AvatarFallback className="w-56 h-56">
                                         {DATA.initials}
                                     </AvatarFallback>
                                 </Avatar>
@@ -54,23 +55,7 @@ export default function Page() {
                                         )
                                     }
                                 >
-                                    <svg
-                                        className="w-6 h-6 dark:text-gray-800 tex text-white"
-                                        aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            stroke="currentColor"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="M12 13V4M7 14H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-2m-1-5-4 5-4-5m9 8h.01"
-                                        />
-                                    </svg>
+                                    <Download size={16} />
                                     Download CV
                                 </Button>
                             </div>
