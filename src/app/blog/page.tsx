@@ -1,19 +1,13 @@
-import BlurFade from "@/components/magicui/blur-fade";
 import { getAllBlogs } from "@/data/blog";
 import BlogCard from "@/components/blog-card";
-
-const BLUR_FADE_DELAY = 0.04;
+import Title from "@/components/ui/title";
 
 const BlogPage = async () => {
     const data = await getAllBlogs();
 
     return (
         <section>
-            <BlurFade delay={BLUR_FADE_DELAY}>
-                <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-                    Blog
-                </h1>
-            </BlurFade>
+            <Title title={"My Blogs"} />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {data
                     .sort((a, b) =>
