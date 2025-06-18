@@ -25,8 +25,7 @@ export default function InnerLayout({
     return (
         <body
             className={cn(
-                "min-h-screen bg-background font-sans antialiased py-12 sm:py-24 px-6 shadow-xl dark:shadow-slate-200",
-                !isBlogDetailPage ? "max-w-2xl mx-auto" : "max-w-5xl mx-auto", // Only apply on non-blog pages
+                "min-h-screen bg-background font-sans antialiased py-12 sm:py-24 px-6 shadow-xl dark:shadow-slate-200 max-w-5xl mx-auto",
                 fontSans.variable
             )}
         >
