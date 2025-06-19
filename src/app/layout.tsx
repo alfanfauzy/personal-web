@@ -1,12 +1,9 @@
-import Navbar from "@/components/navbar";
-import { ThemeProvider } from "@/components/theme-provider";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
-import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import InnerLayout from "./blog/inner-layout";
+import RegisterSW from "@/components/register-sw";
 
 const fontSans = FontSans({
     subsets: ["latin"],
@@ -62,8 +59,15 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <link rel="icon" href="/fav-me-icon.ico" sizes="any" />
-            <InnerLayout>{children}</InnerLayout>
+            <head>
+                <link rel="manifest" href="/manifest.json" />
+                <link rel="icon" href="/fav-me-icon.ico" sizes="any" />
+                <meta name="theme-color" content="#0f172a" />
+            </head>
+            <body>
+                <RegisterSW />
+                <InnerLayout>{children}</InnerLayout>
+            </body>
         </html>
     );
 }
