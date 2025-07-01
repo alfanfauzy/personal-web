@@ -203,7 +203,7 @@ export const DATA = {
     projects: [
         {
             title: "Dzikir Al Matsurat - Web App - PWA",
-            href: "dzikir-almatsurat.netlify.app/",
+            href: "https://dzikir-almatsurat.netlify.app/",
             dates: "2025",
             active: true,
             description:
