@@ -203,12 +203,12 @@ export const DATA = {
     projects: [
         {
             title: "Dzikir Al Matsurat - Web App - PWA",
-            href: "https://alfanfauzy.github.io/dzikir-almatsurat/",
+            href: "dzikir-almatsurat.netlify.app/",
             dates: "2025",
             active: true,
             description:
                 "Development Dzikir Al Ma'tsurat Web App with simple HTML, CSS and Javascript. Support with PWA",
-            technologies: ["HTML", "CSS", "Javascript", "PWA"],
+            technologies: ["HTML", "CSS", "Javascript", "PWA", "Netlify"],
             links: [
                 {
                     type: "Website",
