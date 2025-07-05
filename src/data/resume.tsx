@@ -10,7 +10,7 @@ export const DATA = {
     description:
         "Frontend Developer based in Jakarta, Indonesia. Passionate about building impactful web experiences and exploring new tech.",
     summary:
-        "With over 4 years in frontend development, I’ve contributed to a range of digital products from **Telecomunications, Entertainment, HR Management System, Restauran Point of Sales, AI Automatication, and Fintech platforms** focusing on performance, maintainability, and seamless user experiences.\n\n I’ve led improvements that drastically reduced build times and sizes, and implemented real-time features like live streaming, chat, and analytics dashboards. I enjoy working with **React, TypeScript, NextJS, TailwindCSS** and modern frontend architecture, and I’m always exploring ways to write cleaner, more efficient code.",
+        "With over 4 years in frontend development, I’ve contributed to a range of digital products from **Telecomunications, Entertainment, HR Management System, Restauran Point of Sales, AI Automatication, and Fintech platforms** focusing on performance, maintainability, and seamless user experiences.\n\n I’ve led improvements that drastically reduced build times and sizes, and implemented real-time features like live streaming, chat, and analytics dashboards. I enjoy working with **React, TypeScript, NextJS, TailwindCSS, Progressive Web App (PWA)** and modern frontend architecture, and I’m always exploring ways to write cleaner, more efficient code.",
     avatarUrl: "/me.png",
     skills: [
         {
