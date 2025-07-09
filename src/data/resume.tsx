@@ -68,6 +68,11 @@ export const DATA = {
             color: "#21759B",
             logo: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/wordpress.png",
         },
+        {
+            text: "Progressive Web Apps",
+            color: "#5A0FC8",
+            logo: "https://raw.githubusercontent.com/github/explore/refs/heads/main/topics/pwa/pwa.png",
+        },
     ],
     styilingskilss: [
         {
