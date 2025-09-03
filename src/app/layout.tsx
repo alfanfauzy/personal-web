@@ -63,6 +63,7 @@ export default function RootLayout({
                 <link rel="manifest" href="/manifest.json" />
                 <link rel="icon" href="/fav-me-icon.ico" sizes="any" />
                 <meta name="theme-color" content="#0f172a" />
+                <script defer src="https://cloud.umami.is/script.js" data-website-id="ae52596e-a43c-48b0-92fd-05b1a793f84e"></script>
             </head>
             <body>
                 <RegisterSW />
