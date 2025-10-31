@@ -143,7 +143,7 @@ export const DATA = {
       logoUrl: "/work/appfuxion.png",
       start: "Jul 2025",
       end: "Current",
-      description: "{Under Maintenance}",
+      description: "Led the frontend development of AGIS, an AI-driven web platform for Allianz that streamlines health claim processes. Focused on secure feature implementation, component reusability, and cross-team collaboration to enhance performance and user experience.",
     },
     {
       company: "Moduit Digital Indonesia",
