@@ -218,6 +218,24 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Allianz Claims - Health Claim Copilot",
+      href: "https://agis-claim-ui.appfuxion.com",
+      dates: "2025 - current",
+      active: true,
+      description:
+        "Development Website that Empowering the Future of Banking and Insurance with AI-Driven Precision or in easy understand is health claim copilot project for Allianz Insurance",
+      technologies: ["NextJS", "Typescript", "TailwindCSS", "Redux"],
+      links: [
+        {
+          type: "Website",
+          href: "https://agis-claim-ui.appfuxion.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/project/claims-allianz-login.png",
+      video: "",
+    },
+    {
       title: "Dzikir Al Matsurat - Web App - PWA",
       href: "https://dzikir-almatsurat.netlify.app/",
       dates: "2025",
@@ -239,7 +257,7 @@ export const DATA = {
       title: "Moduit Web Advisor",
       href: "https://advisor-beta.moduit.id/",
       dates: "2023-2025",
-      active: true,
+      active: false,
       description:
         "Development website for Advisor that provide digital product investment like bond, mutual fund, equity, insurance",
       technologies: ["React", "NextJS", "Styled Component", "Typescript"],
