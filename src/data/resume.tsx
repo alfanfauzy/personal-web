@@ -237,7 +237,7 @@ export const DATA = {
     },
     {
       title: "Dzikir Al Matsurat - Web App - PWA",
-      href: "https://dzikir-almatsurat.netlify.app/",
+      href: "https://baca-dzikir.alfan.web.id/",
       dates: "2025",
       active: true,
       description:
