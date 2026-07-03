@@ -8,9 +8,9 @@ export const DATA = {
   location: "Jakarta, ID",
   locationLink: "https://www.google.com/maps/place/jakarta",
   description:
-    "Frontend Developer based in Jakarta, Indonesia. Passionate about building impactful web experiences and exploring new tech.",
+  "Senior Frontend Engineer based in Jakarta, Indonesia. Passionate about building scalable web applications, improving engineering practices, and creating exceptional user experiences.",
   summary:
-    "With over 4 years in frontend development, I’ve contributed to a range of digital products from **Telecomunications, Entertainment, HR Management System, Restauran Point of Sales, AI Automatication, and Fintech platforms** focusing on performance, maintainability, and seamless user experiences.\n\n I’ve led improvements that drastically reduced build times and sizes, and implemented real-time features like live streaming, chat, and analytics dashboards. I enjoy working with **React, TypeScript, NextJS, TailwindCSS, Progressive Web App (PWA)** and modern frontend architecture, and I’m always exploring ways to write cleaner, more efficient code.",
+  "I’m a Senior Frontend Engineer with over 6 years of experience building enterprise web applications using React, Next.js, and TypeScript. Throughout my career, I’ve worked across AI, Insurance, FinTech, HR Technology, Entertainment, and Retail industries, delivering products that balance business goals with long-term maintainability.\n\nBeyond building features, I enjoy improving engineering systems—whether that means optimizing build pipelines, designing reusable component architectures, standardizing coding practices, or mentoring engineers. I believe great frontend engineering is about creating software that scales for both users and development teams.\n\nMy current focus includes AI-powered enterprise applications, frontend architecture, technical leadership, and continuous engineering improvement.\n\nI believe great frontend engineering is more than shipping features. it's about building scalable systems, improving developer experience, and enabling teams to deliver software with confidence.",
   avatarUrl: "/me.png",
   skills: [
     {
