@@ -8,9 +8,9 @@ export const DATA = {
   location: "Jakarta, ID",
   locationLink: "https://www.google.com/maps/place/jakarta",
   description:
-  "Senior Frontend Engineer based in Jakarta, Indonesia. Passionate about building scalable web applications, improving engineering practices, and creating exceptional user experiences.",
+    "Senior Frontend Engineer based in Jakarta, Indonesia. Passionate about building scalable web applications, improving engineering practices, and creating exceptional user experiences.",
   summary:
-  "I’m a Senior Frontend Engineer with over 6 years of experience building enterprise web applications using React, Next.js, and TypeScript. Throughout my career, I’ve worked across AI, Insurance, FinTech, HR Technology, Entertainment, and Retail industries, delivering products that balance business goals with long-term maintainability.\n\nBeyond building features, I enjoy improving engineering systems—whether that means optimizing build pipelines, designing reusable component architectures, standardizing coding practices, or mentoring engineers. I believe great frontend engineering is about creating software that scales for both users and development teams.\n\nMy current focus includes AI-powered enterprise applications, frontend architecture, technical leadership, and continuous engineering improvement.\n\nI believe great frontend engineering is more than shipping features. it's about building scalable systems, improving developer experience, and enabling teams to deliver software with confidence.",
+    "I’m a Senior Frontend Engineer with over 6 years of experience building enterprise web applications using React, Next.js, and TypeScript. Throughout my career, I’ve worked across AI, Insurance, FinTech, HR Technology, Entertainment, and Retail industries, delivering products that balance business goals with long-term maintainability.\n\nBeyond building features, I enjoy improving engineering systems—whether that means optimizing build pipelines, designing reusable component architectures, standardizing coding practices, or mentoring engineers. I believe great frontend engineering is about creating software that scales for both users and development teams.\n\nMy current focus includes AI-powered enterprise applications, frontend architecture, technical leadership, and continuous engineering improvement.\n\nI believe great frontend engineering is more than shipping features. it's about building scalable systems, improving developer experience, and enabling teams to deliver software with confidence.",
   avatarUrl: "/me.png",
   skills: [
     {
@@ -143,7 +143,8 @@ export const DATA = {
       logoUrl: "/work/appfuxion.png",
       start: "Jul 2025",
       end: "Current",
-      description: "Led the frontend development of AGIS, an AI-driven web platform for Allianz that streamlines health claim processes. Focused on secure feature implementation, component reusability, and cross-team collaboration to enhance performance and user experience.",
+      description:
+        "Led the frontend development of AGIS, an AI-driven web platform for Allianz that streamlines health claim processes. Focused on secure feature implementation, component reusability, and cross-team collaboration to enhance performance and user experience.",
     },
     {
       company: "Moduit Digital Indonesia",
@@ -233,6 +234,24 @@ export const DATA = {
         },
       ],
       image: "/project/claims-allianz-login.png",
+      video: "",
+    },
+    {
+      title: "Cuti Kuy",
+      href: "https://cuti-kuy.netlify.app/",
+      dates: "2026",
+      active: true,
+      description:
+        "Cuti Kuy Web App is a simple web to showing holiday and leave in Indonesia.",
+      technologies: ["HTML", "CSS", "Javascript", "PWA", "Netlify"],
+      links: [
+        {
+          type: "Website",
+          href: "https://cuti-kuy.netlify.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/project/cuti-kuy.png",
       video: "",
     },
     {
